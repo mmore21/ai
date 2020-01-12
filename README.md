@@ -5,6 +5,7 @@ Popular machine learning algorithms implemented in Python. These implementations
 The following algorithms are implemented:
 * Linear Regression
 * Logistic Regression
+* k-Nearest Neighbors (kNN) Classification
 * Neural Network (In Progress)
 
 ### Libraries
