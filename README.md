@@ -5,7 +5,7 @@ learning. The presented mathematical intuition and formulas along with
 the Octave exercises presented throughout the course were used as the 
 fundamental guidelines to implementing these algorithms. Inspiration for 
 some of the newer algorithms come from university courses at 
-UCI.
+UCI. Some implementations are planned to be converted to Jupyter Notebooks for better visualization.
 
 ### Algorithms
 The following algorithms are implemented:
