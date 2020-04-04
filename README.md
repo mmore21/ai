@@ -12,7 +12,6 @@ The following algorithms are implemented:
 * Linear Regression
 * Logistic Regression
 * k-Nearest Neighbors (kNN) Classification
-* Naive Bayes Classification (In Progress)
 
 ### Libraries
 * Matplotlib
