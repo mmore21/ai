@@ -12,6 +12,7 @@ The following algorithms are implemented:
 * Linear Regression
 * Logistic Regression
 * k-Nearest Neighbors (kNN) Classification
+* Neural Network
 
 ### Libraries
 * Matplotlib
