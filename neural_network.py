@@ -34,7 +34,9 @@ def predict(X, W, b):
 
     A = [X, a1, a2]
 
-    return A
+    Z = [z1, z2]
+
+    return [A, Z]
 
 def loss(yhat, y):
     return -(y * np.log(yhat) + (1-y) * np.log(1-yhat))
@@ -48,7 +50,7 @@ def compute_cost(yhats, ys):
     
 
 # --- Backpropagation
-def backpropagation(W, A, ys):
+def backpropagation(W, Z, A, ys):
     dz2 = A[2] - ys
     dW2 = np.dot(dz2, A[1].T)
     db2 = dz2
