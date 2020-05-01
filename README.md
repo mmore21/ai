@@ -16,3 +16,10 @@ The following algorithms are implemented:
 
 ### Examples
 These algorithms include the example datasets that the Coursera course uses. Simply clone this folder and run the respective script to see a demo of the algorithm. Jupyter Notebook implementations may be added in the future if time permits.
+
+### Future Algorithms
+As time permits, the following algorithms to be added include:
+* Naive Bayes Classifier
+* Support Vector Machine (SVM)
+* Convolutional Neural Network (CNN)
+* Neural Style Transfer CNN
