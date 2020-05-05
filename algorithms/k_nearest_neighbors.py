@@ -4,9 +4,8 @@ Author: Mason Moreland (mmore21)
 Description: k-Nearest Neighbors (kNN) classifier implemented in Python 3.
 """
 
-import matplotlib.pyplot as plt
-import pandas as pd
 import numpy as np
+import matplotlib.pyplot as plt
 import math
 from collections import Counter
 
@@ -38,24 +37,3 @@ def plot_data(data, target):
     plt.ylabel('Exam 2 Score')
 
     plt.show()
-
-if __name__ == "__main__":
-    # Read example data
-    data = pd.read_csv("ex2data1.txt", header=None)
-
-    # Convert and split data into numpy arrays
-    X = np.asarray(data.iloc[:,0:2])
-    y = np.asarray(data.iloc[:,2])
-
-    plot_data(X, y)
-
-    new_test_score = [75, 80]
-
-    knnResult = knn(X, y, new_test_score, 3)
-
-    print(knnResult)
-
-    if (knnResult[0]):
-        print("Prediction of accepted admission.")
-    else:
-        print("Prediction of declined admission.")

@@ -7,6 +7,7 @@ city profit and the univariate regressor predicts respective profit per populati
 """
 
 import numpy as np
+import matplotlib.pyplot as plt
 
 def gradient_descent(X, y, theta, alpha, iterations):
     """ Performs gradient descent to optimize theta. """
