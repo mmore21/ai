@@ -1,5 +1,11 @@
-# Python Machine Learning Algorithms
-Popular machine learning algorithms implemented in Python. These implementations are based upon Andrew Ng's Coursera courses on machine learning and deep learning. The presented mathematical intuition and formulas along with the Octave exercises presented throughout the course were used as the fundamental guidelines to implementing these algorithms. Inspiration for some of the newer algorithms come from university courses at UCI. Some implementations are planned to be converted to Jupyter Notebooks for better visualization.
+# Artificial Intelligence Notebooks
+Popular AI algorithms implemented in Python and Jupyter Notebooks.
+
+These implementations are based upon the mathematical theory in Andrew Ng's Coursera specializations and UC Irvine's AI courses.
+
+### Libraries
+* Python 3
+* TensorFlow 2 / Keras
 
 ### Algorithms
 The following algorithms are implemented:
@@ -7,15 +13,6 @@ The following algorithms are implemented:
 * Logistic Regression
 * k-Nearest Neighbors (kNN) Classification
 * Shallow Neural Network
-
-### Libraries
-* Matplotlib
-* NumPy
-* Pandas
-* SciPy
-
-### Examples
-These algorithms include the example datasets that the Coursera course uses. Simply clone this folder and run the respective script to see a demo of the algorithm. Jupyter Notebook implementations may be added in the future if time permits.
 
 ### Future Algorithms
 As time permits, the following algorithms to be added include:
