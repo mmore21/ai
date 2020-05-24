@@ -6,13 +6,16 @@ These implementations are based upon the mathematical theory in Andrew Ng's Cour
 ### Libraries
 * Python 3
 * TensorFlow 2 / Keras
+* NumPy
+* pandas
+* matplotlib
 
 ### Algorithms
 The following algorithms are implemented:
 * Linear Regression
 * Logistic Regression
-* k-Nearest Neighbors (kNN) Classification
-* Shallow Neural Network
+* k-Nearest Neighbors Classifier
+* Neural Network
 
 ### Future Algorithms
 As time permits, the following algorithms to be added include:
