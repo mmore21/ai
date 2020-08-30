@@ -19,7 +19,6 @@ The following algorithms are implemented:
 * Logistic Regression
 * k-Nearest Neighbors Classifier
 * Neural Network
-<<<<<<< HEAD
 
 ### Future Algorithms
 
@@ -28,5 +27,3 @@ As time permits, the following algorithms to be added include:
 * Support Vector Machine (SVM)
 * Convolutional Neural Network (CNN)
 * Neural Style Transfer CNN
-=======
->>>>>>> 7c3e805da0eafddbdc7e0bcecefa4624bbb32d84
