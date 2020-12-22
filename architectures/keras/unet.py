@@ -1,8 +1,8 @@
 import tensorflow as tf
 
-class ConvBlock(tf.Keras.Layer):
+class UNetBlock(tf.Keras.Layer):
 	def __init__(self):
-		super(ConvBlock, self).__init__()
+		super(UNetBlock, self).__init__()
 		self.conv = 
 
 class UNet(tf.Keras.Model):
@@ -18,4 +18,4 @@ class UNet(tf.Keras.Model):
 		x = self.block_2(x)
 		x = self.global_pool(x)
 		return self.classifier(x)
-	
+	 
