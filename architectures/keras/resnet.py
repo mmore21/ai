@@ -7,6 +7,7 @@ class ResNetBlock(tf.keras.layers.Layer):
 	def call(self, inputs):
 		pass
 
+
 class ResNet(tf.keras.Model):
 	def __init__(self):
 		super(ResNet, self).__init__()
