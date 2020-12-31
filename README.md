@@ -20,9 +20,16 @@ The following algorithms are implemented:
 * k-Nearest Neighbors Classifier
 * Neural Network
 
-### Future Algorithms
+### Architecture
 
-As time permits, the following algorithms to be added include:
+The following architectures are implemented:
+* Residual Neural Network (ResNet)
+* U-Net
+* Variational Autoencoder (VAE)
+
+### Roadmap
+
+As time permits, the following algorithms and architectures to be implemented include:
 * Naive Bayes Classifier
 * Support Vector Machine (SVM)
 * Convolutional Neural Network (CNN)
