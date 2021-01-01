@@ -34,3 +34,5 @@ As time permits, the following algorithms and architectures to be implemented in
 * Support Vector Machine (SVM)
 * Convolutional Neural Network (CNN)
 * Neural Style Transfer CNN
+
+Also, there is the possibility of writing a simple deep learning library for educational purposes.
