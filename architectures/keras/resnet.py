@@ -13,8 +13,8 @@ class ResNet(tf.keras.Model):
 		super(ResNet, self).__init__()
 		self.block_1 = ResNetBlock()
 		self.block_2 = ResNetBlock()
-		self.global_pool = layers.GlobalAveragePooling2D()
-		self.classifier = Dense(num_classes)
+		self.global_pool = tf.keras.layers.GlobalAveragePooling2D()
+		self.classifier = tf.keras.layers.Dense(num_classes)
 	
 	def call(self, inputs):
 		x = self.block_1(inputs)
