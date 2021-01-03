@@ -6,6 +6,7 @@ class DenseNetBlock(tf.keras.layers.Layer):
 	
 	def call(self, inputs):
 		pass
+		
 	
 class DenseNet(tf.keras.Model):
 	def __init__(self):

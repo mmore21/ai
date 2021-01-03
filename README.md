@@ -23,6 +23,7 @@ The following algorithms are implemented:
 ### Architecture
 
 The following architectures are implemented:
+* DenseNet
 * Residual Neural Network (ResNet)
 * U-Net
 * Variational Autoencoder (VAE)
@@ -35,4 +36,4 @@ As time permits, the following algorithms and architectures to be implemented in
 * Convolutional Neural Network (CNN)
 * Neural Style Transfer CNN
 
-Also, there is the possibility of writing a simple deep learning library for educational purposes.
+Also, there is the possibility of using a self-implemented deep learning library for educational purposes.
