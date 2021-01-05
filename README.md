@@ -22,7 +22,7 @@ The following algorithms are implemented:
 
 ### Architecture
 
-The following architectures are implemented:
+The following architectures are implemented in Keras and PyTorch:
 * DenseNet
 * Residual Neural Network (ResNet)
 * U-Net
