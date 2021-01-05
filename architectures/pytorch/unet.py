@@ -1,6 +1,6 @@
 import torch
 
-class ResNetBlock(torch.nn.Module):
+class UNetBlock(torch.nn.Module):
 	def __init__(self):
 		super(ResNetBlock, self).__init__()
 	
@@ -9,9 +9,9 @@ class ResNetBlock(torch.nn.Module):
 		pass
 
 
-class ResNet(torch.nn.Module):
+class UNet(torch.nn.Module):
 	def __init__(self):
-		super(ResNet, self).__init__()
+		super(UNet, self).__init__()
 	
 	def foward(self, inputs):
 		pass
