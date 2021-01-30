@@ -14,4 +14,11 @@ class SEBlock(tf.keras.layers.Layer):
         self.scale2 = tf.keras.layers.Reshape((1, 1, 1, original.shape[-1]))
 
     def call(self, inputs):
-        pass
+        x = inputs
+        x = self.p1(x)
+        x = self.f1(x)
+        x = self.n1(x)
+        x = self.r1(x)
+        x = self.scale1(x)
+        x = self.scale2(x)
+        return self.original * x
