@@ -2,6 +2,8 @@ import tensorflow as tf
 import tensorflow_datasets as tfds
 import numpy as np
 
+import SEBlock
+
 class Conv3DBlock(tf.keras.layers.Layer):
     def __init__(self, name="conv3d_block", kernel_size=(1, 3, 3), filters=2, stride=1, padding="same", input_shape=None, **kwargs):
         super(Conv3DBlock, self).__init__(name=name, **kwargs)
