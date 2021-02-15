@@ -1,4 +1,7 @@
 import tensorflow as tf
+import tensorflow_datasets as tfds
+import numpy as np
+import matplotlib.pyplot as plt
 
 class Sampling(tf.keras.layers.Layer):
 	def call(self, inputs):
@@ -27,3 +30,6 @@ class VariationalAutoEncoder(tf.keras.Model):
 	
 	def call(self, inputs):
 		pass
+
+if __name__ == "__main__":
+	pass
