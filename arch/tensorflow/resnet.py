@@ -7,8 +7,7 @@ import tensorflow as tf
 import tensorflow_datasets as tfds
 import numpy as np
 import matplotlib.pyplot as plt
-
-import ConvBlock2D
+from _conv import ConvBlock2D
 
 class ResBlock2D(tf.keras.layers.Layer):
     def __init__(self, filters):
@@ -63,7 +62,7 @@ if __name__ == "__main__":
     # Create and compile model
     resnet = ResNet2D(num_classes=10)
     resnet.compile(optimizer=tf.keras.optimizers.Adam(learning_rate=2e-4),
-                    loss=tf.keras.losses.SparseCategoricalCrossEntropy(from_logits=True),
+                    loss=tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True),
                     metrics=["accuracy"],
                     experimental_run_tf_function=False)
 

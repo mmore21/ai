@@ -6,9 +6,9 @@ import tensorflow as tf
 import tensorflow_datasets as tfds
 import numpy as np
 import matplotlib.pyplot as plt
+from resnet import ResNet2D
 
-# TODO: Accept a model and evaluate on the MNIST data set
-def evaluate_mnist(model):
+def evaluate_mnist(model_path):
     # Load data set
     (x_train, y_train), (x_test, y_test) = tf.keras.datasets.mnist.load_data()
 
@@ -20,22 +20,10 @@ def evaluate_mnist(model):
     print(x_train.shape, y_train.shape)
 
     # Create and compile model
-    senet = SENet3D(num_classes=10)
-    senet.compile(optimizer=tf.keras.optimizers.Adam(learning_rate=2e-4),
-                    loss=tf.keras.losses.SparseCategoricalCrossEntropy(from_logits=True),
-                    metrics=["accuracy"],
-                    experimental_run_tf_function=False)
-
-    # Train model
-    senet.fit(
-        x=x_train,
-        y=y_train,
-        steps_per_epoch=100,
-        epochs=10
-    )
+    model = tf.keras.models.load_model(model_path, compile=False)
 
     # Evaluate model on test set
-    score = senet.evaluate(x_test, y_test)
+    score = model.evaluate(x_test, y_test)
     print("Test loss:", score[0])
     print("Test accuracy:", score[1])
 
@@ -43,6 +31,6 @@ def evaluate_mnist(model):
     for i in range(10):
         plt.imshow(x_test[i, ..., 0])
         plt.show()
-        logits = senet.predict(np.expand_dims(x_test[i], axis=0))
+        logits = model.predict(np.expand_dims(x_test[i], axis=0))
         pred = np.argmax(logits, axis=-1)[0]
-        print("SENet:", pred, "\nActual:", y_test[i])
+        print("Prediction:", pred, "\nActual:", y_test[i])

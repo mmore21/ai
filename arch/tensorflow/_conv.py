@@ -1,6 +1,5 @@
 """
-Architecture: Convolutional Neural Network (CNN)
-Paper: N/A
+Description: Fundamental convolutional building block modules.
 """
 
 import tensorflow as tf
@@ -43,19 +42,3 @@ class ConvBlock3D(tf.keras.layers.Layer):
         x = self.norm(x)
         x = self.acti(x)
         return x
-
-class ConvNet2D(tf.keras.Model):
-    def __init__(self):
-        super(ConvNet2D, self).__init__()
-        pass
-    
-    def call(self, inputs):
-        pass
-
-class ConvNet3D(tf.keras.Model):
-    def __init__(self):
-        super(ConvNet3D, self).__init__()
-        pass
-    
-    def call(self, inputs):
-        pass
