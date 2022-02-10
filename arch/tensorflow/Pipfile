@@ -5,7 +5,7 @@ name = "pypi"
 
 [packages]
 tensorflow-datasets = "*"
-tensorflow = "~=2.4.1"
+tensorflow = "~=2.5.3"
 matplotlib = "*"
 
 [dev-packages]
